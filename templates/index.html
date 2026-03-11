@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Password Analyzer - Enterprise Edition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <div class="container">
+        <header>
+            <h1>🔐 Advanced Password Analyzer</h1>
+            <p class="subtitle">Professional Security Analysis - Enterprise Edition</p>
+        </header>
+
+        <main>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="analyzer">ANALYZER</button>
+                <button class="tab-btn" data-tab="generator">GENERATOR</button>
+                <button class="tab-btn" data-tab="info">INFO</button>
+            </div>
+
+            <!-- ANALYZER TAB -->
+            <div id="analyzer" class="tab-content active">
+                <div class="input-section">
+                    <label>Enter Password:</label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="password" placeholder="Enter password to analyze..." autocomplete="off">
+                        <button id="toggleBtn" class="toggle-btn" title="Show/Hide">👁️</button>
+                    </div>
+                </div>
+
+                <div id="results" class="results" style="display: none;">
+                    <!-- Strength Meter -->
+                    <div class="strength-section">
+                        <div class="strength-header">
+                            <h2>Password Strength</h2>
+                            <span class="strength-badge" id="strengthBadge">-</span>
+                        </div>
+                        <div class="strength-meter">
+                            <div class="strength-bar" id="strengthBar"></div>
+                        </div>
+                        <p class="score-text">Score: <span id="scoreText">0</span>/100 | Entropy: <span id="entropyText">0</span> bits</p>
+                        <p class="crack-time">🔓 Crack Time (GPU): <span id="crackTimeText">N/A</span></p>
+                    </div>
+
+                    <!-- Metrics -->
+                    <div class="metrics-section">
+                        <h3>Character Composition</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-card" id="uppercaseCard">
+                                <div class="metric-icon">🔤</div>
+                                <div class="metric-label">Uppercase</div>
+                                <div class="metric-value" id="uppercaseValue">-</div>
+                            </div>
+                            <div class="metric-card" id="lowercaseCard">
+                                <div class="metric-icon">🔡</div>
+                                <div class="metric-label">Lowercase</div>
+                                <div class="metric-value" id="lowercaseValue">-</div>
+                            </div>
+                            <div class="metric-card" id="digitsCard">
+                                <div class="metric-icon">🔢</div>
+                                <div class="metric-label">Numbers</div>
+                                <div class="metric-value" id="digitsValue">-</div>
+                            </div>
+                            <div class="metric-card" id="specialCard">
+                                <div class="metric-icon">⚡</div>
+                                <div class="metric-label">Special</div>
+                                <div class="metric-value" id="specialValue">-</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vulnerabilities -->
+                    <div class="vuln-section" id="vulnSection" style="display: none;">
+                        <h3>🚨 Vulnerabilities Found</h3>
+                        <ul id="vulnList" class="vuln-list"></ul>
+                    </div>
+
+                    <!-- Feedback -->
+                    <div class="feedback-section">
+                        <h3>💡 Recommendations</h3>
+                        <ul id="feedbackList" class="feedback-list"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GENERATOR TAB -->
+            <div id="generator" class="tab-content">
+                <h2>🔑 Password Generator</h2>
+                <div class="generator-section">
+                    <div class="slider-group">
+                        <label>Length: <span id="lengthValue">16</span></label>
+                        <input type="range" id="lengthSlider" min="8" max="64" value="16">
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="genUpper" checked> Uppercase</label>
+                        <label><input type="checkbox" id="genLower" checked> Lowercase</label>
+                        <label><input type="checkbox" id="genDigits" checked> Digits</label>
+                        <label><input type="checkbox" id="genSpecial" checked> Special Chars</label>
+                    </div>
+
+                    <button id="generateBtn" class="btn btn-primary">Generate Password</button>
+
+                    <div id="generatedResult" class="generated-result" style="display: none;">
+                        <div class="generated-password">
+                            <input type="text" id="generatedPasswordText" readonly>
+                            <button id="copyGenBtn" class="btn btn-small">📋 Copy</button>
+                        </div>
+                        <div id="generatedAnalysis"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INFO TAB -->
+            <div id="info" class="tab-content">
+                <h2>ℹ️ About This Tool</h2>
+                <div class="info-content">
+                    <h3>Advanced Password Analyzer - Enterprise Edition v1.0</h3>
+                    <p>Professional password security analysis application developed for Pinnacle Labs Cybersecurity Internship.</p>
+                    
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Shannon entropy calculation</li>
+                        <li>GPU-based crack time estimation</li>
+                        <li>Vulnerability detection</li>
+                        <li>Advanced password generator</li>
+                        <li>Real-time analysis</li>
+                        <li>Professional reporting</li>
+                    </ul>
+
+                    <h4>Security Tips:</h4>
+                    <ul>
+                        <li>Use at least 16 characters</li>
+                        <li>Mix all character types</li>
+                        <li>Avoid dictionary words</li>
+                        <li>Never reuse passwords</li>
+                        <li>Enable 2FA when possible</li>
+                        <li>Use a password manager</li>
+                    </ul>
+
+                    <h4>Privacy:</h4>
+                    <p>✓ Your passwords are analyzed locally<br>
+                    ✓ Nothing is stored or transmitted<br>
+                    ✓ 100% secure and private</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Advanced Password Analyzer | Pinnacle Labs Cybersecurity Internship</p>
+            <p>Your passwords are never stored or transmitted. All analysis is performed locally.</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
