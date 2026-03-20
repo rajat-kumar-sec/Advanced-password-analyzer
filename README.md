@@ -1,6 +1,6 @@
 # Advanced Password Analyzer - Professional Web Application:
 
-Professional password security analysis tool developed for Pinnacle Labs Cybersecurity Internship.
+Professional password security analysis tool developed for Pinnacle Labs Cybersecurity Internship...
 
 ## Features
 
