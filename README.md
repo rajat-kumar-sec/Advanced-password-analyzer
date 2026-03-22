@@ -37,7 +37,7 @@ docker compose up
 3. Connect GitHub repo
 4. Create Web Service
 5. Set Start Command: `gunicorn app:app`
-6. Deploy!
+6. Deploy!!!
 
 ## Technology Stack
 
