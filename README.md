@@ -26,7 +26,7 @@ Then open `http://localhost:5000`
 
 ### Docker.
 
-```bash
+```bash...
 docker compose up
 ```
 
