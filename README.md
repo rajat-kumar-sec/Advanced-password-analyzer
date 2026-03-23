@@ -32,7 +32,7 @@ docker compose up
 
 ### Deploy to Render
 
-1. Push to GitHub
+1. Push to GitHub.
 2. Go to https://render.com
 3. Connect GitHub repo
 4. Create Web Service
