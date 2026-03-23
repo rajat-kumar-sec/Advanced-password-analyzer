@@ -35,7 +35,7 @@ docker compose up
 1. Push to GitHub.
 2. Go to https://render.com.
 3. Connect GitHub repo.
-4. Create Web Service
+4. Create Web Service.
 5. Set Start Command: `gunicorn app:app`
 6. Deploy!!!
 
