@@ -30,7 +30,7 @@ Then open `http://localhost:5000`
 docker compose up
 ```
 
-### Deploy to Render
+### Deploy to Render---
 
 1. Push to GitHub.
 2. Go to https://render.com.
@@ -39,7 +39,7 @@ docker compose up
 5. Set Start Command: `gunicorn app:app`
 6. Deploy!!!
 
-## Technology Stack
+## Technology Stack---
 
 - Python 3.11
 - Flask 3.0
@@ -47,13 +47,13 @@ docker compose up
 - HTML5/CSS3/JavaScript
 - Docker
 
-## Security
+## Security---
 
 ✓ Passwords never stored
 ✓ All analysis local
 ✓ 100% private
 ✓ No data transmission
 
-## License
+## License---
 
 Developed for Pinnacle Labs - 2026
