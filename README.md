@@ -56,4 +56,4 @@ docker compose up
 
 ## License---
 
-Developed for Pinnacle Labs - 2026
+Developed for Pinnacle Labs - 2026.
