@@ -15,7 +15,7 @@ Professional password security analysis tool developed for Pinnacle Labs Cyberse
 
 ## Quick Start...
 
-### Local Development.
+### Local Development...
 
 ```bash
 pip install -r requirements.txt
