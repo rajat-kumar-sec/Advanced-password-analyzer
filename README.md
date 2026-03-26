@@ -24,7 +24,7 @@ python app.py
 
 Then open `http://localhost:5000`
 
-### Docker.
+### Docker...
 
 ```bash...
 docker compose up
