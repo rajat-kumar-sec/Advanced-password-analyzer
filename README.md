@@ -39,7 +39,7 @@ docker compose up
 5. Set Start Command: `gunicorn app:app`
 6. Deploy!!!!!
 
-## Technology Stack---
+## ---Technology Stack---
 
 - Python 3.11
 - Flask 3.0
