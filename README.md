@@ -1,4 +1,4 @@
-# Advanced Password Analyzer - Professional Web Application:
+# :Advanced Password Analyzer - Professional Web Application:
 
 Professional password security analysis tool developed for Pinnacle Labs Cybersecurity Internship...
 
