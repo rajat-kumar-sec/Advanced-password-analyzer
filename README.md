@@ -11,7 +11,7 @@ Professional password security analysis tool developed for Pinnacle Labs Cyberse
 ✅ Vulnerability detection
 ✅ Beautiful responsive UI
 ✅ Professional styling
-✅ Mobile responsive...
+✅ Mobile responsive
 
 ## Quick Start...
 
