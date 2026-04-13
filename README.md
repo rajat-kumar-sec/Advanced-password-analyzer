@@ -54,6 +54,6 @@ docker compose up
 ✓ 100% private
 ✓ No data transmission
 
-## License---
+## License
 
 Developed for Pinnacle Labs - 2026
