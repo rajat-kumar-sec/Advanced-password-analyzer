@@ -30,7 +30,7 @@ Then open `http://localhost:5000`
 docker compose up
 ```
 
-### Deploy to Render---
+### Deploy to Render
 
 1. Push to GitHub.
 2. Go to https://render.com.
