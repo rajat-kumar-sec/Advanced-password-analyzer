@@ -47,7 +47,7 @@ docker compose up
 - HTML5/CSS3/JavaScript
 - Docker
 
-## Security
+## Security...
 
 ✓ Passwords never stored
 ✓ All analysis local
