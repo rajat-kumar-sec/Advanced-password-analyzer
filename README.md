@@ -9,7 +9,7 @@ Professional password security analysis tool developed for Pinnacle Labs Cyberse
 3.✅ Shannon entropy calculation.
 4.✅ GPU-based crack time estimation.
 5.✅ Vulnerability detection.
-✅ Beautiful responsive UI.
+6.✅ Beautiful responsive UI.
 ✅ Professional styling.
 ✅ Mobile responsive.
 
