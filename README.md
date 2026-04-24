@@ -10,7 +10,7 @@ Professional password security analysis tool developed for Pinnacle Labs Cyberse
 4.✅ GPU-based crack time estimation.
 5.✅ Vulnerability detection.
 6.✅ Beautiful responsive UI.
-✅ Professional styling.
+7.✅ Professional styling.
 ✅ Mobile responsive.
 
 ## Quick Start:
