@@ -6,7 +6,7 @@ Professional password security analysis tool developed for Pinnacle Labs Cyberse
 
 1.✅ Real-time password analysis.
 2.✅ Advanced password generator.
-✅ Shannon entropy calculation.
+3.✅ Shannon entropy calculation.
 ✅ GPU-based crack time estimation.
 ✅ Vulnerability detection.
 ✅ Beautiful responsive UI.
