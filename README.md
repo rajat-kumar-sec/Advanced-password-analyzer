@@ -13,7 +13,7 @@ Professional password security analysis tool developed for Pinnacle Labs Cyberse
 7.✅ Professional styling.
 8.✅ Mobile responsive.
 
-## Quick Start:
+## Quick Start
 
 ### Local Development:
 
